@@ -1,4 +1,3 @@
-print("Hola Mundo")
 def funcio5():
     print("Introdueix un valor numèric")
     numero=int(input())

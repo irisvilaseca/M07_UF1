@@ -1,13 +1,13 @@
 def funcio2():
-    ivaCorrecte=false
+    ivaCorrecte=False
     IVAvalids=[4,10,21]
     preuFinal=0
     print("Introdueix un import")
-    import=int(input())
-    while(!ivaCorrecte){
+    import_total=float(input())
+    while not ivaCorrecte:
         print("Introdueix un IVA")
-        IVA=input();
-        ivaCorrecte= IVA in IVAvalids
-    }
-    preuFinal=import*(IVA/100)
-    print("L'import indicat és {import} , el valor de l'IVA és {IVA} i el preu final és {import}")
+        IVA=int(input())
+        if IVA in IVAvalids:
+            ivaCorrecte=True
+    preuFinal=import_total*(IVA/100)
+    print("L'import indicat és {import_total} , el valor de l'IVA és {IVA} i el preu final és {import}")

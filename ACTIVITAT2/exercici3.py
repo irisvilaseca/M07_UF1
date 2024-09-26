@@ -9,4 +9,4 @@ def funcio3():
     else:
         resultat=valor2
     
-    print("El nombre més gran és "+resultat)
+    print("El nombre més gran és {resultat}")
