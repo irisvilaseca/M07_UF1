@@ -1,0 +1,6 @@
+print("Introdueix deu números separats per un espai")
+llistaNoTractada=input()
+llista=llistaNoTractada.split()
+tupla= tuple(map(int,llista))
+tuplaOrdenada=tuple(sorted(tupla))
+print(tuplaOrdenada)
